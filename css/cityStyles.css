@@ -1,0 +1,50 @@
+h1 
+{
+    color:red;
+}
+
+.cityTitle
+{
+     font-family:'Calibri';
+    color:white;
+}
+
+#cityInputBox
+ 
+{
+    background-color: rgb(173, 179, 236);
+    font-family: 'Calibri';
+    border-width:2px;
+    border-style:dotted;
+    border-color:black;
+    
+}
+
+
+#cityMiddleBand
+{
+    background-color:white;
+}
+
+#cityInfoOutputArea
+{
+     border-width:1px;
+    border-style:dotted;
+    border-color:rgb(224, 210, 210);
+    background-color: bisque;
+     font-family:'Calibri';
+    font-size:16px;
+}
+
+#cityPage
+{
+    max-width:190px;
+    background-color: black;
+    border:rgb(184, 159, 159);
+    border-style:dotted;
+    border-width:1px;
+    border-top-left-radius:4%;
+    border-top-right-radius:4%;
+    border-bottom-right-radius:1%;
+    border-bottom-left-radius:1%;
+}

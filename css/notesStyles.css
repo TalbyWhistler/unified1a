@@ -1,0 +1,87 @@
+#notesTitle
+{
+    color:rgb(235, 191, 138);
+}
+
+
+#notesInputPanel
+{
+    background-color: rgb(210, 211, 150);
+    font-family: 'Calibri';
+    border-width:2px;
+    border-style:dotted;
+    border-color:black;
+}
+
+#notesPage
+{
+     max-width:600px;
+    background-color: black;
+    border:rgb(184, 159, 159);
+    border-style:dotted;
+    border-width:1px;
+    border-top-left-radius:4%;
+    border-top-right-radius:4%;
+    border-bottom-right-radius:1%;
+    border-bottom-left-radius:1%;
+}
+
+#notesInput
+{
+    background-color: whitesmoke;
+    width:90%;
+    border-left:3px;
+}
+#notesOutputTable,td
+{
+    border-bottom:rgb(109, 81, 81);
+    border-width:1px;
+    border-style:dotted;
+}
+
+#notesOutputArea
+{
+      border-width:1px;
+    border-style:dotted;
+    border-color:rgb(224, 210, 210);
+    background-color: rgb(235, 191, 138);
+}
+
+
+#notesSubmitButton
+{
+    background-color: black;
+    color:white;
+    border-radius:15%;
+}
+
+#notesTitle,#notesInputPanel,#notesOutputArea
+{
+    font-family:'Calibri';
+}
+
+.noteDeleteButton
+{
+    background-color: rgb(177, 221, 221);
+    border-radius:15%;
+
+}
+
+
+.noteEntry 
+{
+    width:100%;
+    min-width:320px;
+}
+
+.deleteColumn
+{
+    margin-left:auto;  
+}
+
+.noteRows
+{
+    display:flex;
+    min-width:100%;
+}
+

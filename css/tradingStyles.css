@@ -1,0 +1,125 @@
+
+
+/*
+    $panelClass="inputPanel";
+    $panelInputsClass="panelInputs";
+    $titleClass="tradingTitle";
+    $cityButtonClass="cityButton";
+    $commodityButtonClass="commodityButton";
+    $submitButtonClass="tradingSubmitButton";
+    */
+
+.tradingTitle
+{
+    font-family:'Calibri';
+    color:white;
+    
+}
+
+
+.inputPanel 
+{
+    background-color: rgb(225, 238, 43);
+    font-family: 'Calibri';
+    border-width:2px;
+    border-style:dotted;
+    border-color:black;
+    
+}
+
+.citiesAndCommodities
+{
+    border-width:2px;
+    border-style:dotted;
+    border-color:black;
+}
+
+.tradingSubmitButton
+{
+    background-color: black;
+    color:white;
+    border-radius:15%;
+    
+}
+
+.cityButton
+{
+    background-color: yellowgreen;
+    width:100px;
+    
+    border-radius:10%;
+}
+
+.commodityButton
+{
+    background-color: aquamarine;
+    width:100px;
+    border-radius:10%;
+}
+
+.infoTable 
+{
+    font-family:'Calibri';
+    font-size:16px;
+}
+
+.tradeRouteTable
+{
+    font-family:'Calibri';
+    font-size:16px;
+}
+
+.row 
+{
+    display:flex;
+}
+
+#infoArea
+{
+    border-width:1px;
+    border-style:dotted;
+    border-color:rgb(224, 210, 210);
+    background-color: bisque;
+}
+
+#tradeRouteArea 
+{
+    background-color: rgb(201, 168, 168);
+    border-style:dotted;
+    border-width:1px;
+}
+
+#infoTableHeader 
+{
+    
+    width:100%;
+}
+
+#citiesArea,#commoditiesArea 
+{
+    background-color: grey;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-width:2px;
+    border-style:dotted;
+    border-color:black;
+    
+}
+
+.tradePage 
+{
+    max-width:700px;
+    background-color: black;
+    border:rgb(184, 159, 159);
+    border-style:dotted;
+    border-width:1px;
+    border-top-left-radius:4%;
+    border-top-right-radius:4%;
+    border-bottom-right-radius:1%;
+    border-bottom-left-radius:1%;
+}
+
+h1
+{
+    color:red;
+}

@@ -1,0 +1,67 @@
+h1 
+{
+    color:red;
+}
+
+
+.itemInputPanel
+{
+     background-color: rgb(223, 153, 23);
+    font-family: 'Calibri';
+    border-width:2px;
+    border-style:dotted;
+    border-color:black;
+}
+
+
+.itemTitle
+{
+    font-family:'Calibri';
+    color:white;
+}
+
+
+.itemInfoTable 
+{
+     border-width:1px;
+    border-style:dotted;
+    border-color:rgb(224, 210, 210);
+    background-color: bisque;
+     font-family:'Calibri';
+    font-size:16px;
+    width:100%;
+}
+
+.itemCityButton
+{
+    background-color: yellowgreen;
+    width:100px;
+    
+    border-radius:10%;
+}
+
+.itemButton 
+{
+    background-color: aquamarine;
+    width:100px;
+    border-radius:10%;
+}
+
+#itemMiddleBand 
+{
+    background-color: brown;
+}
+
+
+#itemPage 
+{
+      max-width:700px;
+    background-color: black;
+    border:rgb(184, 159, 159);
+    border-style:dotted;
+    border-width:1px;
+    border-top-left-radius:4%;
+    border-top-right-radius:4%;
+    border-bottom-right-radius:1%;
+    border-bottom-left-radius:1%;
+}
