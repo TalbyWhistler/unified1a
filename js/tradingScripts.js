@@ -77,10 +77,10 @@ function afterTradingUpdate(data)
 
 function fetchCities()
 {
-    callTradingBackend('fetchCities','',printCities);
+    callTradingBackend('fetchCities','',printCitiesT);
 }
 
-function printCities(cities)
+function printCitiesT(cities)
 {
     console.log(cities);
     outputArea=document.getElementById("citiesArea");
@@ -481,7 +481,7 @@ function isAlphaT(input)
     {
         return false;
     }
-    const contained='abcdefghijklmnoqrstuvwxyz ';
+    const contained='abcdefghijklmnopqrstuvwxyz ';
     console.log(input);
     for(let i=0;i<input.length;i++)
     {

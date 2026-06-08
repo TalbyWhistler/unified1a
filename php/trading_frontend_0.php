@@ -47,8 +47,8 @@
         $panelContents=''
             .$cityInputLabel.$br.$cityInput.$br
             .$commodityInputLabel.$br.$commodityInput.$br 
-            .$buyingInputLabel.$br.$buyingInput.$br 
             .$sellingInputLabel.$br.$sellingInput.$br 
+            .$buyingInputLabel.$br.$buyingInput.$br 
             .$button
             .$statusIndicatorBox;
 

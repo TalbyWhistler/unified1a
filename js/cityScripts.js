@@ -72,7 +72,8 @@ function citiesCallBackend(inputFunction,parameters,callback)
 
 function isAlpha(input)
 {
-    const contained='abcdefghijklmnoqrstuvwxyz ';
+    const contained='abcdefghijklmnopqrstuvwxyz ';
+    console.log('=================',input);
     for(let i=0;i<input.length;i++)
     {
         if (contained.indexOf(input[i])==-1)
@@ -148,6 +149,7 @@ function handleCitySubmit()
     let statusOutput=document.getElementById("cityStatusIndicator");
     let cityInput=document.getElementById("cityCityInput").value.toLowerCase().trim();
     let coOrdsInput=document.getElementById("coordsCityInput").value.toLowerCase().trim();
+    console.log('============',cityInput,coOrdsInput);
     if (validateCityInput(cityInput) && validateCoordsInput(coOrdsInput))
     {
         statusOutput.innerHTML='Input accepted'

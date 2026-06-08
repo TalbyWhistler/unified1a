@@ -193,6 +193,7 @@ function handleItemSubmit()
     let item=document.getElementById("itemItemInput").value.toLowerCase().trim();
     let city=document.getElementById("itemCityInput").value.toLowerCase().trim();
     let price=document.getElementById("itemPriceInput").value;
+    console.log("values",city,item,price);
     if (validateInput(item,city,price))
     {
         console.log("Item submit:",item,' ',city,' ',price);
@@ -219,6 +220,8 @@ function printForUpdate(data)
     console.log(data);
     let statusOutput=document.getElementById("itemStatusIndicator");
     statusOutput.innerHTML=data;
+    fetchCitiesForItems();
+    fetchItemsForItems();
     document.getElementById("itemItemInput").value='';
     document.getElementById("itemPriceInput").value='';
     document.getElementById("itemItemInput").focus();
@@ -230,6 +233,7 @@ function validateInput(item,city,price)
     {
         return false;
     }
+    console.log("=======",!isAlpha(city),!isAlpha(item),!isNumber(price));
     if(!isAlpha(city) || !isAlpha(item) || !isNumber(price))
     {
         return false;
@@ -239,7 +243,7 @@ function validateInput(item,city,price)
 
 function isAlpha(input)
 {
-    const contained='abcdefghijklmnoqrstuvwxyz ';
+    const contained='abcdefghijklmnopqrstuvwxyz ';
     for(let i=0;i<input.length;i++)
     {
         if (contained.indexOf(input[i])==-1)
