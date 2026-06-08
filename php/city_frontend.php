@@ -1,5 +1,5 @@
 <?php  
-
+/*
 function createElement($element,$id,$class,$inner)
     {
         $elementString='';
@@ -29,7 +29,7 @@ function createButton($id,$class,$function,$inner)
             .'</button>';
         return $elementString;
     }
-
+*/
 function citiesPage() 
 {
     $br='</br>';
@@ -81,5 +81,5 @@ function citiesPage()
 
  
     
-    echo citiesPage();
+   // echo citiesPage();
 ?>

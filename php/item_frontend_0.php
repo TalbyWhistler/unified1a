@@ -1,6 +1,6 @@
 <?php 
 
-
+/*
 function createElement($element,$id,$class,$inner)
     {
         $elementString='';
@@ -30,7 +30,7 @@ function createButton($id,$class,$function,$inner)
             .'</button>';
         return $elementString;
     }
-
+*/
 function itemPage()
 {
     $titleBox=createElement('h1','itemTitle','itemTitle',"Item Keeper");
@@ -103,6 +103,6 @@ function itemPage()
         return $pageOutput;
 }
 
-echo itemPage();
+//echo itemPage();
         
 ?>

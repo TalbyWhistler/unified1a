@@ -80,5 +80,5 @@
 
    
     
-    echo tradingPage();
+   // echo tradingPage();
 ?>

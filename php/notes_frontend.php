@@ -1,5 +1,5 @@
 <?php 
-
+/*
 function createElement($element,$id,$class,$inner)
     {
         $elementString='';
@@ -29,7 +29,7 @@ function createButton($id,$class,$function,$inner)
             .'</button>';
         return $elementString;
     }
-    
+*/    
     function notesPage() 
     {
         $textAreaRows=5;
@@ -64,5 +64,5 @@ function createButton($id,$class,$function,$inner)
         return $pageOutput;
     }
     
-    echo notesPage();
+    //echo notesPage();
 ?> 
