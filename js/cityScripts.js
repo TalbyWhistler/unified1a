@@ -110,7 +110,7 @@ function validateCityInput(city)
     return true;
 }
 
-function validateCoordsInput(coOrds)
+function validateCoordsInputB(coOrds)
 {
     if (coOrds.length==0)
     {
@@ -126,6 +126,56 @@ function validateCoordsInput(coOrds)
         return false;
     }
     return true;
+}
+
+
+function validateCoordsInput(coOrds)
+{
+        if (coOrds.length==0)
+    {
+        return false;
+    }
+    let outputEntry='';
+    let inputCoOrds=coOrds.replace(' ','');
+    inputCoOrds=inputCoOrds.replace('*','');
+    const directions="nsew";
+    const numbers="0123456789";
+    let index=0;
+    if (directions.indexOf(inputCoOrds[0])==-1)
+    {
+        return false;
+    }
+    else 
+    {
+        outputEntry+=inputCoOrds[index];
+        index+=1;
+    }
+    
+    while(numbers.indexOf(inputCoOrds[index])!=-1)
+    {
+        outputEntry+=inputCoOrds[index];
+        index+=1;
+    }
+    if (index>3)
+    {
+        return false;
+    }
+    if (directions.indexOf(inputCoOrds[index]) != -1)
+    {
+        outputEntry+=inputCoOrds[index];
+        index+=1;
+    }
+       while(numbers.indexOf(inputCoOrds[index])!=-1)
+    {
+        outputEntry+=inputCoOrds[index];
+        index+=1;
+    }
+    if (index>6)
+    {
+        return false;
+    }
+    return true;
+    
 }
 
 function testPrint(data)
@@ -148,7 +198,7 @@ function handleCitySubmit()
     console.log('js city submit button');
     let statusOutput=document.getElementById("cityStatusIndicator");
     let cityInput=document.getElementById("cityCityInput").value.toLowerCase().trim();
-    let coOrdsInput=document.getElementById("coordsCityInput").value.toLowerCase().trim();
+    let coOrdsInput=document.getElementById("coordsCityInput").value.toLowerCase().trim().replace('*','').replace(' ','');
     console.log('============',cityInput,coOrdsInput);
     if (validateCityInput(cityInput) && validateCoordsInput(coOrdsInput))
     {
