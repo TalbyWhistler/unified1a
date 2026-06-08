@@ -28,7 +28,7 @@ function attachStyleSheet()
     
 }
 
-function handleSubmitButton()
+function handleTradingSubmitButton()
 {
     let cityInput=document.getElementById("cityInput");
     let commodityInput=document.getElementById("commodityInput");
@@ -44,7 +44,7 @@ function handleSubmitButton()
 
     let functionName="inputRecord";
     let functionParams ={city:city,commodity:commodity,buyingPrice:buyingPrice,sellingPrice:sellingPrice};
-    if (isAlpha(city) &&isAlpha(commodity) && isNumber(buyingPrice)&&isNumber(sellingPrice))
+    if (isAlphaT(city) &&isAlphaT(commodity) && isNumberT(buyingPrice)&&isNumberT(sellingPrice))
     {
         document.getElementById("tradingStatusIndicator").innerHTML="Input Accepted";
         callTradingBackend("inputRecord",functionParams,afterTradingUpdate);
@@ -467,7 +467,7 @@ function printTradeRoutesByCommodity(data)
 
 
 
-function isAlpha(input)
+function isAlphaT(input)
 {
     try 
     {
@@ -493,7 +493,7 @@ function isAlpha(input)
     return true;
 }
 
-function isNumber(input)
+function isNumberT(input)
 {
     try 
     {

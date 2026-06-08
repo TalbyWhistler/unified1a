@@ -38,13 +38,14 @@ h1
 
 #cityPage
 {
-    max-width:190px;
+    max-width:190px; 
     background-color: black;
     border:rgb(184, 159, 159);
     border-style:dotted;
     border-width:1px;
-    border-top-left-radius:4%;
-    border-top-right-radius:4%;
+  /*  border-top-left-radius:4%; */
+   /* flex:1 1 auto; */
+    border-top-right-radius:4%; 
     border-bottom-right-radius:1%;
     border-bottom-left-radius:1%;
 }

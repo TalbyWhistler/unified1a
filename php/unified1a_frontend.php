@@ -4,6 +4,11 @@
     include 'city_frontend.php';
     include 'notes_frontend.php';
 
+    $headerBand=createElement('div','unifiedHeaderBand','headerBand','');
+    $leftBand=createElement('div','unifiedLeftBand','headerBand','');
+    $rightBand=createElement('div','unifiedRightBand','headerBand','');
+    $invisibleDiv=createElement('div','unifiedInvisibleDiv','invisibleDiv','');
+
     $tradingWidget=tradingPage();
     $itemWidget=itemPage();
     $cityWidget=citiesPage();
@@ -11,13 +16,18 @@
     
 
     $applicationFrameContents=''
+        .$leftBand
         .$tradingWidget
         .$itemWidget
+        .$notesWidget
         .$cityWidget
-        .$notesWidget;
+       // .$invisibleDiv
+        .$rightBand;
 
-    $applicationFrame=createElement('div','appFrame','appFrame',$applicationFrameContents);
-
+    $applicationFrame=createElement('div','appFrame','appFrame', $applicationFrameContents);
+    $pageOutput=''
+        .$headerBand 
+        .$applicationFrame;
     
-    echo $applicationFrame;
+    echo $pageOutput;
 ?>

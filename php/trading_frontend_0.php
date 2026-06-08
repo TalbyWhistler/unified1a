@@ -39,7 +39,7 @@
         $buyingInput=createInput('buyingPriceInput',"panelInputs");
         $sellingInputLabel=createElement('label','sellingInputLabel','inputLabels',"Selling Price");
         $sellingInput=createInput('sellingPriceInput','panelInputs');
-        $button=createButton("tradingSubmitButton","tradingSubmitButton","handleSubmitButton",'Submit');
+        $button=createButton("tradingSubmitButton","tradingSubmitButton","handleTradingSubmitButton",'Submit');
         $br='</br>';
         $statusIndicator=createElement('p','tradingStatusIndicator','statusIndicator','Ready');
         $statusIndicatorBox=createElement('div','tradingStatusIndicatorBox','statusIndicatorBox',$statusIndicator);

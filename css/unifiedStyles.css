@@ -7,4 +7,42 @@ h1
 #appFrame 
 {
     display:flex;
+    margin-left:auto;
+    flex-direction:row;
+    flex-wrap:wrap;
+   
+    
+}
+
+.headerBand
+{
+    background-color: rgb(144, 185, 185);
+    min-width: 10px;
+    border-style:solid;
+    border-width:2px;
+    border-color:black;
+    border-radius:20%;
+    
+}
+
+#unifiedInvisibleDiv
+{
+    background-color:aqua;
+    min-width:20px;
+    flex:1 1 auto;
+    visibility:hidden;
+}
+
+#unifiedHeaderBand 
+{
+    visibility: hidden;
+    padding:20px;
+}
+body 
+{
+    background-image:linear-gradient(rgba(255,255,255,0.6)),url("../assets/water0a.JPG");
+   /* background-size:cover; */
+    background-position:center;
+    opacity:90%;
+    
 }

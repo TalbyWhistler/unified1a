@@ -114,7 +114,7 @@
     border-style:dotted;
     border-width:1px;
     border-top-left-radius:4%;
-    border-top-right-radius:4%;
+  /*  border-top-right-radius:4%; */
     border-bottom-right-radius:1%;
     border-bottom-left-radius:1%;
 }
